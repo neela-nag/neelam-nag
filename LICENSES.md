@@ -22,3 +22,4 @@ This project is built with free, open-source software. Here are the key dependen
 - **GitHub Pages**: Free hosting for public repositories
 
 All dependencies are free and open source. No proprietary software required.
+# License Info
