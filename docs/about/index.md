@@ -68,8 +68,6 @@ Functional specifications for cash management software and client-side end-user 
 
 I am currently available for new opportunities.
 
-- **Email:** neelam.nagg@gmail.com
-- **Phone:** +49 172 410 9462
 - **LinkedIn:** [linkedin.com/in/neelam-nag](https://linkedin.com/in/neelam-nag)
 - **Location:** Munich, Germany — open to Berlin, remote, and relocation within Europe
 - **Right to work:** Niederlassungserlaubnis (permanent residence permit) — no visa requirements
