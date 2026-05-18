@@ -417,6 +417,92 @@ body {
 .nn-before-label { color: #C0392B; }
 .nn-after-label  { color: #1E8449; }
 
+/* ── IA grid (Navigation structure) ──────────────────── */
+.nn-ia-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.nn-ia-section {
+  background: white;
+  border: 1px solid var(--nn-mid);
+  border-radius: 6px;
+  padding: 1.1rem 1.3rem 1.2rem;
+}
+
+.md-typeset .nn-ia-section h5 {
+  margin: 0 0 0.8rem 0 !important;
+  color: var(--nn-navy) !important;
+  font-size: 0.78rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  border-bottom: 2px solid var(--nn-accent);
+  padding-bottom: 0.4rem;
+}
+
+.md-typeset .nn-ia-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.md-typeset .nn-ia-section li {
+  font-size: 0.85rem;
+  line-height: 1.55;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--nn-light);
+  color: var(--nn-muted);
+}
+
+.md-typeset .nn-ia-section > ul > li:last-child {
+  border-bottom: none;
+}
+
+.md-typeset .nn-ia-section li strong {
+  color: var(--nn-navy);
+  font-weight: 600;
+}
+
+.md-typeset .nn-ia-section li ul {
+  margin-top: 0.4rem;
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--nn-mid);
+}
+
+.md-typeset .nn-ia-section li li {
+  font-size: 0.8rem;
+  color: var(--nn-muted);
+  padding: 0.2rem 0;
+  border-bottom: none;
+}
+
+.md-typeset .nn-ia-section p {
+  font-size: 0.85rem;
+  color: var(--nn-muted);
+  margin: 0;
+  line-height: 1.55;
+}
+
+.nn-ia-tag {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 0.1em 0.5em;
+  border-radius: 3px;
+  margin-left: 0.25em;
+  vertical-align: 0.1em;
+  text-transform: uppercase;
+}
+
+.nn-ia-tag.new      { background: rgba(232,80,10,0.12);  color: #B33D04; }
+.nn-ia-tag.rewrite  { background: rgba(26,107,170,0.12); color: #144E80; }
+.nn-ia-tag.keep     { background: rgba(93,109,126,0.12); color: var(--nn-muted); }
+.nn-ia-tag.move     { background: rgba(13,43,69,0.10);   color: var(--nn-navy); }
+
 /* ── Sample card ─────────────────────────────────────── */
 .nn-sample-grid {
   display: grid;

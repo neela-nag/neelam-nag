@@ -92,81 +92,104 @@ The proposed IA keeps the existing content groupings — which are not wrong —
 
 ### Navigation structure
 
-```
-Top navigation: Guides | API reference | Release notes
+**Top navigation:** Guides · API reference · Release notes
 
-OVERVIEW
-├── How Enfuce works          ← NEW: data model + platform diagram
-├── Authentication            ← NEW: API keys, sandbox URL, auth pattern  
-├── Sandbox + test data       ← NEW: test cards, simulate events
-├── Start developing          ← REWRITE: true developer quickstart
-└── Integration checklist     ← NEW: master go-live checklist
+<div class="nn-ia-grid" markdown>
 
-SET UP YOUR PROGRAMME
-├── BIN sponsorship           ← REWRITE: task flow, concept embedded
-├── Onboard a customer        ← NEW: merges Customer + Account pages
-│   ├── Create a customer
-│   ├── Create an account
-│   ├── Account types
-│   └── Account hierarchy
-└── Credit solution + ledger  ← KEEP: existing section
+<div class="nn-ia-section" markdown>
+##### Overview
+- **How Enfuce works** <span class="nn-ia-tag new">NEW</span> — data model + platform diagram
+- **Authentication** <span class="nn-ia-tag new">NEW</span> — API keys, sandbox URL, auth pattern
+- **Sandbox + test data** <span class="nn-ia-tag new">NEW</span> — test cards, simulate events
+- **Start developing** <span class="nn-ia-tag rewrite">REWRITE</span> — true developer quickstart
+- **Integration checklist** <span class="nn-ia-tag new">NEW</span> — master go-live checklist
+</div>
 
-ISSUE ANY CARD
-├── Issue a virtual card      ← NEW: full task flow (see sample below)
-├── Issue a physical card     ← REWRITE: Card page restructured
-├── Issue a disposable card   ← REWRITE: existing page, rewritten
-├── Issue an All-in-One card  ← REWRITE: existing page, rewritten
-├── Manage card lifecycle     ← NEW: merges card statuses, renewal, replacement
-├── PIN management            ← REWRITE: extract from Card page
-├── Digital-first experience  ← KEEP: existing section
-│   ├── View card data
-│   ├── View + change PIN
-│   ├── Digital wallets
-│   └── Flexible card artwork
-└── Card Management APIs      ← KEEP: existing section
+<div class="nn-ia-section" markdown>
+##### Set up your programme
+- **BIN sponsorship** <span class="nn-ia-tag rewrite">REWRITE</span> — task flow, concept embedded
+- **Onboard a customer** <span class="nn-ia-tag new">NEW</span> — merges Customer + Account pages
+    - Create a customer
+    - Create an account
+    - Account types
+    - Account hierarchy
+- **Credit solution + ledger** <span class="nn-ia-tag keep">KEEP</span>
+</div>
 
-PROCESS PAYMENTS
-├── How authorisation works   ← REWRITE: Introduction to transactions
-├── Authorisation control     ← REWRITE: existing page, task flow
-├── Financial transactions    ← REWRITE: existing page, restructured
-├── Webhook notifications     ← NEW: dedicated page for notifications
-├── 3DS authentication        ← MOVE: from Peace of mind
-├── Fraud + dispute management← MOVE: from Peace of mind
-├── Discounts                 ← KEEP: move from Global processing
-├── Purchase details          ← KEEP: move from Global processing
-└── Transfer API              ← KEEP: move from Global processing
+<div class="nn-ia-section" markdown>
+##### Issue any card
+- **Issue a virtual card** <span class="nn-ia-tag new">NEW</span> — full task flow (see sample below)
+- **Issue a physical card** <span class="nn-ia-tag rewrite">REWRITE</span> — Card page restructured
+- **Issue a disposable card** <span class="nn-ia-tag rewrite">REWRITE</span>
+- **Issue an All-in-One card** <span class="nn-ia-tag rewrite">REWRITE</span>
+- **Manage card lifecycle** <span class="nn-ia-tag new">NEW</span> — merges card statuses, renewal, replacement
+- **PIN management** <span class="nn-ia-tag rewrite">REWRITE</span> — extract from Card page
+- **Digital-first experience** <span class="nn-ia-tag keep">KEEP</span>
+    - View card data
+    - View + change PIN
+    - Digital wallets
+    - Flexible card artwork
+- **Card Management APIs** <span class="nn-ia-tag keep">KEEP</span>
+</div>
 
-CONTROL SPENDING
-├── Spend controls            ← REWRITE: existing section
-│   ├── Geo blocks
-│   ├── MCC blocks
-│   └── Usage limiters
+<div class="nn-ia-section" markdown>
+##### Process payments
+- **How authorisation works** <span class="nn-ia-tag rewrite">REWRITE</span> — Introduction to transactions
+- **Authorisation control** <span class="nn-ia-tag rewrite">REWRITE</span> — task flow
+- **Financial transactions** <span class="nn-ia-tag rewrite">REWRITE</span> — restructured
+- **Webhook notifications** <span class="nn-ia-tag new">NEW</span> — dedicated page for notifications
+- **3DS authentication** <span class="nn-ia-tag move">MOVE</span> — from Peace of mind
+- **Fraud + dispute management** <span class="nn-ia-tag move">MOVE</span> — from Peace of mind
+- **Discounts** <span class="nn-ia-tag keep">KEEP</span> — move from Global processing
+- **Purchase details** <span class="nn-ia-tag keep">KEEP</span> — move from Global processing
+- **Transfer API** <span class="nn-ia-tag keep">KEEP</span> — move from Global processing
+</div>
 
-PROGRAMME MANAGEMENT
-├── Customer portal (MyEnfuce)← KEEP: existing section
-├── Card programme insights   ← MOVE: from The control you want
-├── MyApp — cardholder app    ← KEEP
-├── MyCard — card bureau      ← KEEP
-├── Partnerships              ← KEEP
-└── Customer success          ← KEEP
+<div class="nn-ia-section" markdown>
+##### Control spending
+- **Spend controls** <span class="nn-ia-tag rewrite">REWRITE</span>
+    - Geo blocks
+    - MCC blocks
+    - Usage limiters
+</div>
 
-COMPLIANCE
-├── Global compliance         ← KEEP: existing
-├── PCI DSS                   ← NEW
-└── PSD2                      ← NEW
+<div class="nn-ia-section" markdown>
+##### Programme management
+- **Customer portal (MyEnfuce)** <span class="nn-ia-tag keep">KEEP</span>
+- **Card programme insights** <span class="nn-ia-tag move">MOVE</span> — from The control you want
+- **MyApp — cardholder app** <span class="nn-ia-tag keep">KEEP</span>
+- **MyCard — card bureau** <span class="nn-ia-tag keep">KEEP</span>
+- **Partnerships** <span class="nn-ia-tag keep">KEEP</span>
+- **Customer success** <span class="nn-ia-tag keep">KEEP</span>
+</div>
 
-REFERENCES                    ← NEW section
-├── Transaction codes         ← NEW: extracted from Financial transaction page
-├── Response codes            ← NEW: extracted from existing content
-├── Verification codes        ← NEW
-└── Glossary                  ← NEW
+<div class="nn-ia-section" markdown>
+##### Compliance
+- **Global compliance** <span class="nn-ia-tag keep">KEEP</span>
+- **PCI DSS** <span class="nn-ia-tag new">NEW</span>
+- **PSD2** <span class="nn-ia-tag new">NEW</span>
+</div>
 
-API REFERENCE                 ← KEEP: regroup by domain
-Cards · Accounts · Customers · Transactions · Authorisation
-Notifications · PIN · Transfers · Spend controls · Test API
+<div class="nn-ia-section" markdown>
+##### References <span class="nn-ia-tag new">NEW</span>
+- **Transaction codes** — extracted from Financial transaction page
+- **Response codes** — extracted from existing content
+- **Verification codes**
+- **Glossary**
+</div>
 
-RELEASE NOTES                 ← KEEP: standalone, link from API pages
-```
+<div class="nn-ia-section" markdown>
+##### API reference <span class="nn-ia-tag keep">KEEP</span>
+Regrouped by domain:
+Cards · Accounts · Customers · Transactions · Authorisation · Notifications · PIN · Transfers · Spend controls · Test API
+</div>
+
+<div class="nn-ia-section" markdown>
+##### Release notes <span class="nn-ia-tag keep">KEEP</span>
+Standalone section, linked from API pages.
+</div>
+
+</div>
 
 ---
 
