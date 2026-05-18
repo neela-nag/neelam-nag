@@ -269,18 +269,26 @@ At the end of this guide you have:
 
 ## Next steps
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;">
+<div class="nn-sample-grid" markdown>
 
-**Top up the account**
-Add balance so the cardholder can make purchases. See [Add funds via Transfer API](#).
+<div class="nn-sample-card" markdown>
+### Top up the account
+Add balance so the cardholder can make purchases. [Add funds via Transfer API →](#)
+</div>
 
-**Set up spend controls**
-Apply usage limits, geo blocks, or MCC blocks to control where and how the card can be used. See [Spend controls](#).
+<div class="nn-sample-card" markdown>
+### Set up spend controls
+Apply usage limits, geo blocks, or MCC blocks to control where and how the card can be used. [Spend controls →](#)
+</div>
 
-**Enrol in a digital wallet**
-Allow your cardholder to add the card to Apple Pay or Google Pay. See [Digital wallets](#).
+<div class="nn-sample-card" markdown>
+### Enrol in a digital wallet
+Allow your cardholder to add the card to Apple Pay or Google Pay. [Digital wallets →](#)
+</div>
 
-**Receive transaction notifications**
-Set up webhooks to receive real-time events when the card is used. See [Webhook notifications](#).
+<div class="nn-sample-card" markdown>
+### Receive transaction notifications
+Set up webhooks to receive real-time events when the card is used. [Webhook notifications →](#)
+</div>
 
 </div>

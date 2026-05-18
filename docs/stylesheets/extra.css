@@ -11,6 +11,19 @@
   --nn-mono:    'JetBrains Mono', monospace;
 }
 
+/* Material palette tokens — required because mkdocs.yml uses primary/accent: custom */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:               var(--nn-navy);
+  --md-primary-fg-color--light:        var(--nn-blue);
+  --md-primary-fg-color--dark:         #081929;
+  --md-primary-bg-color:               #ffffff;
+  --md-primary-bg-color--light:        rgba(255,255,255,0.7);
+  --md-accent-fg-color:                var(--nn-accent);
+  --md-accent-fg-color--transparent:   rgba(232,80,10,0.1);
+  --md-accent-bg-color:                #ffffff;
+  --md-accent-bg-color--light:         rgba(255,255,255,0.7);
+}
+
 /* ── Base ───────────────────────────────────────────── */
 body {
   font-family: 'DM Sans', sans-serif;
@@ -74,7 +87,7 @@ body {
 
 /* ── Content ─────────────────────────────────────────── */
 .md-content {
-  background: white;
+  background: var(--nn-light);
   border-left: 1px solid var(--nn-mid);
 }
 
@@ -142,6 +155,80 @@ body {
   border: none;
 }
 
+.highlight pre,
+.highlight code,
+.md-typeset .highlight pre,
+.md-typeset .highlight code {
+  color: #E8E4DC !important;
+}
+
+/* Pygments syntax tokens tuned for dark background */
+.md-typeset .highlight .k,
+.md-typeset .highlight .kd,
+.md-typeset .highlight .kn,
+.md-typeset .highlight .kr { color: #FF9F6B !important; }              /* keyword */
+.md-typeset .highlight .s,
+.md-typeset .highlight .s1,
+.md-typeset .highlight .s2,
+.md-typeset .highlight .sb { color: #B5E48C !important; }              /* string */
+.md-typeset .highlight .c,
+.md-typeset .highlight .c1,
+.md-typeset .highlight .cm,
+.md-typeset .highlight .cp { color: #94A3B8 !important; font-style: italic; }  /* comment */
+.md-typeset .highlight .nb,
+.md-typeset .highlight .nf,
+.md-typeset .highlight .nc,
+.md-typeset .highlight .nx { color: #82C7FF !important; }              /* name/function */
+.md-typeset .highlight .mi,
+.md-typeset .highlight .mf,
+.md-typeset .highlight .mh { color: #FFD580 !important; }              /* number */
+.md-typeset .highlight .p,
+.md-typeset .highlight .o  { color: #B0B7C3 !important; }              /* punctuation/operator */
+.md-typeset .highlight .nt { color: #82C7FF !important; }              /* JSON keys / HTML tags */
+
+/* ── Tabbed content (pymdownx.tabbed alternate_style) ──── */
+.md-typeset .tabbed-set {
+  background: white;
+  border: 1px solid var(--nn-mid);
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 1.5rem 0;
+}
+
+.md-typeset .tabbed-labels {
+  background: var(--nn-light);
+  border-bottom: 1px solid var(--nn-mid);
+  padding: 0 0.4rem;
+}
+
+.md-typeset .tabbed-labels > label {
+  color: var(--nn-muted);
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.7rem 1rem;
+  border-bottom: 2px solid transparent;
+}
+
+.md-typeset .tabbed-labels > label:hover {
+  color: var(--nn-navy);
+}
+
+.md-typeset .tabbed-set > input:checked + label {
+  color: var(--nn-navy);
+  border-bottom-color: var(--nn-accent);
+}
+
+.md-typeset .tabbed-content {
+  padding: 1rem 1.2rem;
+  background: white;
+}
+
+.md-typeset .tabbed-content .highlight {
+  margin: 0;
+}
+
 /* ── Admonitions ─────────────────────────────────────── */
 .md-typeset .admonition,
 .md-typeset details {
@@ -175,8 +262,12 @@ body {
   text-transform: uppercase;
 }
 
+.md-typeset table {
+  background: white;
+}
+
 .md-typeset table tr:nth-child(even) td {
-  background: var(--nn-light);
+  background: #FAF8F3;
 }
 
 /* ── Hero block ──────────────────────────────────────── */

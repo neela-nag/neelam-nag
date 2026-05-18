@@ -45,9 +45,7 @@ Functional specifications for cash management software and client-side end-user 
 ## Certifications and education
 
 - MBA (Finance)
-- AWS Certified Cloud Practitioner (CLF-C02)
 - PRINCE2 Foundation
-- WCAG 2.1 AA — applied in production at Unzer (EAA compliance audit)
 - German B2 — ongoing
 
 ---

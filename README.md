@@ -84,6 +84,6 @@ My work sits at the intersection of three things most documentation misses:
 
 Ten years across fintech, payments, and developer platforms — Unzer, Wirecard, FIS Global, Siemens PLM. I have owned documentation portals end-to-end, managed agency partnerships, implemented WCAG compliance under EU regulatory pressure, and built knowledge bases that internal teams actually use.
 
-I hold an MBA in Finance, a PRINCE2 Foundation certification, and an AWS Cloud Practitioner certification. I work in English and am improving my German toward B2.
+I hold an MBA in Finance and a PRINCE2 Foundation certification. I work in English and am improving my German toward B2.
 
 [Read more about me →](about/)
