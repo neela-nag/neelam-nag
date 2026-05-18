@@ -1,0 +1,425 @@
+/* ── Tokens ─────────────────────────────────────────── */
+:root {
+  --nn-navy:    #0D2B45;
+  --nn-blue:    #1A6BAA;
+  --nn-accent:  #E8500A;
+  --nn-light:   #F5F3EE;
+  --nn-mid:     #E8E4DC;
+  --nn-text:    #1A1A2E;
+  --nn-muted:   #5D6D7E;
+  --nn-code:    #F0EDE8;
+  --nn-mono:    'JetBrains Mono', monospace;
+}
+
+/* ── Base ───────────────────────────────────────────── */
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--nn-light);
+  color: var(--nn-text);
+}
+
+/* ── Header ─────────────────────────────────────────── */
+.md-header {
+  background: var(--nn-navy);
+  box-shadow: none;
+  border-bottom: 2px solid var(--nn-accent);
+}
+
+.md-header__title {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  font-size: 1.1rem;
+}
+
+/* ── Navigation tabs ─────────────────────────────────── */
+.md-tabs {
+  background: var(--nn-navy);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.md-tabs__link {
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  opacity: 0.7;
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  opacity: 1;
+  color: white !important;
+}
+
+.md-tabs__indicator {
+  background: var(--nn-accent);
+}
+
+/* ── Sidebar ─────────────────────────────────────────── */
+.md-sidebar {
+  background: var(--nn-light);
+}
+
+.md-nav__title {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--nn-muted);
+}
+
+.md-nav__link--active {
+  color: var(--nn-accent) !important;
+  font-weight: 600;
+}
+
+/* ── Content ─────────────────────────────────────────── */
+.md-content {
+  background: white;
+  border-left: 1px solid var(--nn-mid);
+}
+
+.md-typeset h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: -0.03em;
+  color: var(--nn-navy);
+  border-bottom: 3px solid var(--nn-accent);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: -0.02em;
+  color: var(--nn-navy);
+  margin-top: 2.5rem;
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--nn-blue);
+  margin-top: 1.8rem;
+}
+
+.md-typeset p {
+  line-height: 1.75;
+  color: var(--nn-text);
+}
+
+.md-typeset a {
+  color: var(--nn-blue);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s;
+}
+
+.md-typeset a:hover {
+  border-bottom-color: var(--nn-blue);
+}
+
+/* ── Code ─────────────────────────────────────────────── */
+.md-typeset code {
+  background: var(--nn-code);
+  color: var(--nn-navy);
+  font-family: var(--nn-mono);
+  font-size: 0.85em;
+  border-radius: 3px;
+  padding: 0.1em 0.4em;
+  border: 1px solid var(--nn-mid);
+}
+
+.md-typeset pre code {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.highlight {
+  background: var(--nn-navy) !important;
+  border-radius: 6px;
+  border: none;
+}
+
+/* ── Admonitions ─────────────────────────────────────── */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 4px;
+  border-left-width: 4px;
+  box-shadow: none;
+}
+
+.md-typeset .note > .admonition-title {
+  background: rgba(26, 107, 170, 0.08);
+}
+
+.md-typeset .warning > .admonition-title {
+  background: rgba(232, 80, 10, 0.08);
+}
+
+/* ── Tables ──────────────────────────────────────────── */
+.md-typeset table {
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--nn-mid);
+  font-size: 0.9rem;
+}
+
+.md-typeset table th {
+  background: var(--nn-navy);
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.md-typeset table tr:nth-child(even) td {
+  background: var(--nn-light);
+}
+
+/* ── Hero block ──────────────────────────────────────── */
+.nn-hero {
+  background: var(--nn-navy);
+  color: white;
+  padding: 3rem 2.5rem;
+  border-radius: 8px;
+  margin-bottom: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.nn-hero::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  width: 200px; height: 200px;
+  background: var(--nn-accent);
+  opacity: 0.08;
+  border-radius: 50%;
+  transform: translate(40%, -40%);
+}
+
+.nn-hero h1 {
+  color: white !important;
+  border: none !important;
+  font-size: 2.2rem !important;
+  margin: 0 0 0.5rem !important;
+  padding: 0 !important;
+}
+
+.nn-hero .nn-role {
+  color: var(--nn-accent);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.nn-hero p {
+  color: rgba(255,255,255,0.8) !important;
+  font-size: 1.05rem;
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+}
+
+/* ── Stat cards ──────────────────────────────────────── */
+.nn-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.nn-stat {
+  background: white;
+  border: 1px solid var(--nn-mid);
+  border-radius: 6px;
+  padding: 1.2rem 1rem;
+  text-align: center;
+}
+
+.nn-stat .nn-stat-num {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--nn-navy);
+  line-height: 1;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.nn-stat .nn-stat-label {
+  font-size: 0.78rem;
+  color: var(--nn-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* ── Decision cards ──────────────────────────────────── */
+.nn-decision {
+  border-left: 4px solid var(--nn-accent);
+  background: #FFF8F5;
+  padding: 1.2rem 1.5rem;
+  border-radius: 0 6px 6px 0;
+  margin: 1.5rem 0;
+}
+
+.nn-decision .nn-decision-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--nn-accent);
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.nn-decision h4 {
+  margin: 0 0 0.5rem !important;
+  color: var(--nn-navy) !important;
+  font-size: 0.95rem !important;
+}
+
+.nn-decision p {
+  margin: 0 !important;
+  font-size: 0.9rem;
+  color: var(--nn-muted) !important;
+}
+
+/* ── Before/After ────────────────────────────────────── */
+.nn-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.nn-before, .nn-after {
+  border-radius: 6px;
+  padding: 1.2rem;
+  font-size: 0.9rem;
+}
+
+.nn-before {
+  background: #FFF5F5;
+  border: 1px solid #FCCACA;
+}
+
+.nn-after {
+  background: #F0FAF4;
+  border: 1px solid #A8E6BE;
+}
+
+.nn-before-label, .nn-after-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  display: block;
+}
+
+.nn-before-label { color: #C0392B; }
+.nn-after-label  { color: #1E8449; }
+
+/* ── Sample card ─────────────────────────────────────── */
+.nn-sample-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.nn-sample-card {
+  background: white;
+  border: 1px solid var(--nn-mid);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.nn-sample-card:hover {
+  border-color: var(--nn-blue);
+  box-shadow: 0 4px 16px rgba(26,107,170,0.08);
+}
+
+.nn-sample-card .nn-tag {
+  display: inline-block;
+  background: var(--nn-light);
+  border: 1px solid var(--nn-mid);
+  border-radius: 3px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.2em 0.6em;
+  color: var(--nn-muted);
+  margin-bottom: 0.8rem;
+}
+
+.nn-sample-card h3 {
+  margin: 0 0 0.5rem !important;
+  font-size: 1rem !important;
+  color: var(--nn-navy) !important;
+}
+
+.nn-sample-card p {
+  font-size: 0.88rem;
+  color: var(--nn-muted) !important;
+  margin: 0 0 1rem !important;
+  line-height: 1.6;
+}
+
+.nn-sample-card a {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--nn-blue) !important;
+  border: none !important;
+}
+
+/* ── Philosophy block ────────────────────────────────── */
+.nn-philosophy {
+  background: var(--nn-navy);
+  color: white;
+  padding: 2rem 2.5rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  font-style: italic;
+  position: relative;
+}
+
+.nn-philosophy::before {
+  content: '\201C';
+  font-size: 5rem;
+  color: var(--nn-accent);
+  opacity: 0.4;
+  position: absolute;
+  top: -0.5rem;
+  left: 1.5rem;
+  line-height: 1;
+  font-style: normal;
+}
+
+.nn-philosophy p {
+  color: rgba(255,255,255,0.9) !important;
+  margin: 0 !important;
+  padding-left: 1rem;
+}
+
+/* ── Footer ──────────────────────────────────────────── */
+.md-footer {
+  background: var(--nn-navy);
+}
+
+/* ── Responsive ──────────────────────────────────────── */
+@media (max-width: 640px) {
+  .nn-compare { grid-template-columns: 1fr; }
+  .nn-hero { padding: 2rem 1.5rem; }
+  .nn-hero h1 { font-size: 1.7rem !important; }
+}

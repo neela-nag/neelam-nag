@@ -1,0 +1,68 @@
+site_name: Neelam Nag
+site_url: https://nelly-welly.github.io/portfolio
+site_description: Technical documentation strategist specialising in developer platforms, payment systems, and AI-ready content.
+site_author: Neelam Nag
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  font:
+    text: DM Sans
+    code: JetBrains Mono
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.instant
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Case Study — Unzer: case-study/index.md
+  - Enfuce Documentation Audit:
+    - Audit and IA proposal: enfuce-audit/index.md
+    - Sample — Issue a virtual card: samples/enfuce-issue-virtual-card.md
+  - Writing Samples:
+    - Overview: samples/index.md
+    - Refund Workflow: samples/refund-workflow.md
+    - API Reference: samples/api-reference.md
+    - Concept — Payment flows: samples/concept.md
+  - AI and Documentation: ai-docs/index.md
+  - About: about/index.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/neelam-nag
+      name: Neelam Nag on LinkedIn
+    - icon: fontawesome/brands/github
+      link: https://github.com/nelly-welly
+      name: GitHub
