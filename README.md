@@ -25,7 +25,4 @@ Now I'm building the AI literacy to match.
 
 Most people entering AI content roles come from an AI background and are learning content. I come from a content background and am learning AI.
 The core insight driving this: the principles that make documentation reliable for humans — atomic topics, single source of truth, consistent taxonomy, audience separation — are the same principles that make knowledge bases reliable for AI retrieval. I spent years solving that problem without calling it AI content strategy. Now I am.
-If you want the longer version: Case Study — From Content Chaos to AI-Ready Knowledge
-
-Connect
-LinkedIn — Neelam Nag
+If you want the longer version: Case Study — From Content Chaos to AI-Ready Knowledge.
