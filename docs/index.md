@@ -53,7 +53,7 @@ My work sits at the intersection of three things most documentation misses:
   <div class="nn-sample-card">
     <span class="nn-tag">Documentation Audit</span>
     <h3>Enfuce — IA proposal</h3>
-    <p>An unsolicited audit of Enfuce's developer documentation — six structural problems identified, a new information architecture proposed based on Stripe and Adyen patterns, and a sample integration guide written to demonstrate the approach.</p>
+    <p>An unsolicited audit of Enfuce's developer documentation — six structural problems identified, a new information architecture proposed based on leading issuer documentation patterns, and a sample integration guide written to demonstrate the approach.</p>
     <a href="enfuce-audit/">Read the audit →</a>
   </div>
   <div class="nn-sample-card">

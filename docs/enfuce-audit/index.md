@@ -3,7 +3,7 @@
 <div class="nn-hero">
   <span class="nn-role">Unsolicited Documentation Audit · May 2026</span>
   <h1>From fragmented guides to a developer-first documentation system</h1>
-  <p>A complete audit of Enfuce's developer documentation — identifying structural problems, proposing a new information architecture based on Stripe and Adyen patterns, and demonstrating the rewrite with a full sample integration guide.</p>
+  <p>A complete audit of Enfuce's developer documentation — identifying structural problems, proposing a new information architecture based on leading issuer documentation patterns, and demonstrating the rewrite with a full sample integration guide.</p>
 </div>
 
 ---
@@ -30,7 +30,7 @@ Before proposing any changes, I systematically read the following pages:
 - Peace of mind: 3DS authentication
 - Release Notes (full — going back to 2022)
 
-I also read Adyen's complete Issuing navigation structure and Adyen's partner style guide — which defines their required page structure and informed the proposed IA.
+I also reviewed established issuer documentation structures and partner style guides — which define required page structure conventions and informed the proposed IA.
 
 ---
 
@@ -74,13 +74,13 @@ I also read Adyen's complete Issuing navigation structure and Adyen's partner st
 
 ---
 
-## The approach — what Stripe and Adyen do differently
+## The approach — patterns from leading issuer documentation
 
-Before proposing changes, I studied how Stripe and Adyen structure their card issuing documentation.
+Before proposing changes, I studied how leading issuer platforms structure their card issuing documentation. Two patterns stand out.
 
-**Stripe** uses a flat task flow with no section groupings. Concepts are embedded at the top of task pages — two or three paragraphs explaining what you need to know before the steps begin. There is no separate Concepts section. Disputes, spend controls, and fraud management all sit at the same level as "Issue a card" — they are all task flows, just different ones.
+**The flat pattern** uses a task flow with no section groupings. Concepts are embedded at the top of task pages — two or three paragraphs explaining what you need to know before the steps begin. There is no separate Concepts section. Disputes, spend controls, and fraud management all sit at the same level as "Issue a card" — they are all task flows, just different ones.
 
-**Adyen** uses grouped task flows with section labels, which is a better fit for Enfuce's complexity. Adyen requires every page to follow a fixed structure: Intro → Requirements → Concept (if needed) → Task → Reference → Exit. The Intro and Exit blocks are mandatory on every page. Adyen also provides a master "Integration and go-live checklist" — a sequential page that covers the full journey from test setup to going live.
+**The grouped pattern** uses task flows with section labels, which is a better fit for Enfuce's complexity. Every page follows a fixed structure: Intro → Requirements → Concept (if needed) → Task → Reference → Exit. The Intro and Exit blocks are mandatory on every page. This pattern also includes a master "Integration and go-live checklist" — a sequential page that covers the full journey from test setup to going live.
 
 **The key principle from both:** concepts belong inside task pages at the point where the developer needs them — not in a separate section they have to navigate away from the task to read. A developer following "Issue a virtual card" needs to understand the Customer → Account → Card relationship — but they need it on that page, not on a separate Concepts page.
 
@@ -100,7 +100,7 @@ OVERVIEW
 ├── Authentication            ← NEW: API keys, sandbox URL, auth pattern  
 ├── Sandbox + test data       ← NEW: test cards, simulate events
 ├── Start developing          ← REWRITE: true developer quickstart
-└── Integration checklist     ← NEW: Adyen-pattern go-live checklist
+└── Integration checklist     ← NEW: master go-live checklist
 
 SET UP YOUR PROGRAMME
 ├── BIN sponsorship           ← REWRITE: task flow, concept embedded
@@ -174,35 +174,35 @@ RELEASE NOTES                 ← KEEP: standalone, link from API pages
 
 ### Decision 1 — No separate Concepts section
 
-The previous version of this IA had a Concepts column. I removed it after studying both Stripe and Adyen. Neither has a separate Concepts section. Concepts live inside task pages at the point where the developer needs them — typically two to three paragraphs before Step 1 begins. The one exception is "How Enfuce works" — a single platform overview page with the data model diagram, because every other page references it.
+The previous version of this IA had a Concepts column. I removed it after studying multiple issuer documentation platforms. The strongest examples do not have a separate Concepts section. Concepts live inside task pages at the point where the developer needs them — typically two to three paragraphs before Step 1 begins. The one exception is "How Enfuce works" — a single platform overview page with the data model diagram, because every other page references it.
 
-### Decision 2 — Adyen-style grouped sections, not Stripe's flat list
+### Decision 2 — Grouped sections, not a flat list
 
-Stripe uses a flat navigation with no group headings. This works for Stripe because their Issuing product is relatively self-contained. Enfuce has more complexity — multiple card types, a credit solution, a customer portal, compliance requirements, and a partner ecosystem. Adyen's grouped structure ("Set up your programme", "Issue any card", "Process payments") makes the navigation scannable at Enfuce's scale.
+A flat navigation with no group headings works for issuer products that are relatively self-contained. Enfuce has more complexity — multiple card types, a credit solution, a customer portal, compliance requirements, and a partner ecosystem. A grouped structure ("Set up your programme", "Issue any card", "Process payments") makes the navigation scannable at Enfuce's scale.
 
-### Decision 3 — Adyen's page structure on every page
+### Decision 3 — A consistent page structure on every page
 
-Every page follows the Adyen-required structure: Intro (required) → Requirements (required) → Concept (optional, embedded) → Task steps (optional) → Reference tables (optional, inline) → Exit (required). The Intro is one sentence. The Exit tells you what you achieved and links to the next sequential page. This structure makes every page self-contained — a developer never has to leave a page to find what they need.
+Every page follows a required structure: Intro (required) → Requirements (required) → Concept (optional, embedded) → Task steps (optional) → Reference tables (optional, inline) → Exit (required). The Intro is one sentence. The Exit tells you what you achieved and links to the next sequential page. This structure makes every page self-contained — a developer never has to leave a page to find what they need.
 
 ### Decision 4 — References as a standalone section
 
-Transaction codes and response codes exist in the current documentation — buried inside the Financial Transaction page. They are too long to be comfortably inline in every task page that references them. Adyen has a References section for exactly this reason. A standalone References section with transaction codes, response codes, verification codes, and a glossary gives developers a fast lookup without breaking the narrative of the task pages.
+Transaction codes and response codes exist in the current documentation — buried inside the Financial Transaction page. They are too long to be comfortably inline in every task page that references them. Mature issuer documentation typically separates these into a References section for exactly this reason. A standalone References section with transaction codes, response codes, verification codes, and a glossary gives developers a fast lookup without breaking the narrative of the task pages.
 
 ### Decision 5 — Integration checklist as the go-live guide
 
-Adyen's integration checklist is the most-bookmarked page in their docs. It is a sequential master page covering every step from sandbox credentials to live deployment. Enfuce has no equivalent. This single page would reduce implementation support queries significantly — developers know exactly what they have done and what they still need to do.
+A master integration checklist — a sequential page covering every step from sandbox credentials to live deployment — is among the most-used pages in mature issuer documentation. Enfuce has no equivalent. This single page would reduce implementation support queries significantly — developers know exactly what they have done and what they still need to do.
 
 ---
 
 ## Sample page — Issue a virtual card
 
-The page below demonstrates how one integration guide would look in the new structure, following Adyen's page anatomy and grounded in the actual Enfuce API.
+The page below demonstrates how one integration guide would look in the new structure, following the proposed page anatomy and grounded in the actual Enfuce API.
 
 [View sample: Issue a virtual card →](../samples/enfuce-issue-virtual-card.md)
 
 The sample demonstrates:
 
-- The six-block Adyen page structure in practice
+- The six-block page structure in practice
 - Concepts embedded at the point of need — not in a separate section
 - Accurate field names and API endpoints from the real Enfuce documentation
 - Separate tabs for Visa and Mastercard endpoints — reflecting a real Enfuce pattern
