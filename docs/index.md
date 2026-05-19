@@ -66,7 +66,7 @@ I want to know if support tickets dropped. If the integration team stopped pingi
   <div class="nn-sample-card">
     <span class="nn-tag">Documentation Audit</span>
     <h3>Enfuce — IA proposal</h3>
-    <p>No one asked me to do this. I looked at Enfuce's developer docs, found six structural problems, proposed a new information architecture borrowing from issuer documentation that actually works, and wrote a sample integration guide to show what the fix would look like in practice.</p>
+    <p>No one asked me to do this. I read through Enfuce's developer docs as a curious outsider, noted where I'd focus first, sketched a new information architecture borrowing from issuer documentation that's already doing this well, and wrote a sample integration guide to make the rewrite concrete.</p>
     <a href="enfuce-audit/">Read the audit →</a>
   </div>
   <div class="nn-sample-card">

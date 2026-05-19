@@ -3,7 +3,7 @@
 <div class="nn-hero">
   <span class="nn-role">Unsolicited Documentation Audit · May 2026</span>
   <h1>From fragmented guides to a developer-first documentation system</h1>
-  <p>A complete audit of Enfuce's developer documentation — identifying structural problems, proposing a new information architecture based on leading issuer documentation patterns, and demonstrating the rewrite with a full sample integration guide.</p>
+  <p>I read through Enfuce's developer documentation. This page is what came out of that read: where I think the docs already work, where they could be stronger, a proposed information architecture borrowing from issuer docs that are already doing this well, and a sample integration guide to make the rewrite concrete.</p>
 </div>
 
 ---
@@ -34,43 +34,18 @@ I also reviewed established issuer documentation structures and partner style gu
 
 ---
 
-## Six problems found
+## Where I'd focus first
 
-<div class="nn-decision">
-  <span class="nn-decision-label">Problem 1</span>
-  <h4>No getting started path</h4>
-  <p>The homepage offers three equal-weight cards: API Docs, Guides, Release Notes. There is no "new here?" path, no quickstart, and no first API call guide. A developer who arrives ready to build has nowhere clear to go. The Guides section opens with a marketing introduction — "nice to meet you!" — not a developer workflow.</p>
-</div>
+Reading the docs end to end, a few themes kept coming back. Each one is something I'd want to work through with the team, in roughly the order below.
 
-<div class="nn-decision">
-  <span class="nn-decision-label">Problem 2</span>
-  <h4>API overview is an unlabelled list of 18 names</h4>
-  <p>The Payment API overview page contains one sentence of description and a list of 18 API section names with no descriptions, no relationships, and no guidance on which ones to use for which use case. A developer cannot make a single decision without clicking into every section individually.</p>
-</div>
-
-<div class="nn-decision">
-  <span class="nn-decision-label">Problem 3</span>
-  <h4>No data model — the Customer → Account → Card relationship is invisible</h4>
-  <p>The Card page, Customer page, and Account page are all separate concept documents with no task flow connecting them. A developer who wants to issue a card must discover independently that they need a customer first, then an account, then a card — in that order. No single page explains this sequence or shows how the entities relate.</p>
-</div>
-
-<div class="nn-decision">
-  <span class="nn-decision-label">Problem 4</span>
-  <h4>Pages mix concept, task, and reference content without separation</h4>
-  <p>The Card page is 11+ sections mixing what cards are (concept), how to create them (task), card statuses (reference), plastic statuses (reference), PIN creation (task), embossing data (reference), and card renewal (task) — all on one scrolling page with no clear separation. A developer looking up a card status code has to scroll through embossing data to find it.</p>
-</div>
-
-<div class="nn-decision">
-  <span class="nn-decision-label">Problem 5</span>
-  <h4>Voice inconsistency signals ungoverned content growth</h4>
-  <p>The guides section uses casual marketing language ("card issuer's guide to happiness", "nice to meet you!"). The Card page is dense and technical. The Authorisation control page is professional and detailed. These read like three different teams with no shared style guide — which is exactly what developers notice and use to judge documentation trustworthiness.</p>
-</div>
-
-<div class="nn-decision">
-  <span class="nn-decision-label">Problem 6</span>
-  <h4>Excellent release notes — completely unlinked from API pages</h4>
-  <p>The release notes are detailed, well-structured, and go back to 2022. They are also completely isolated. There is no link from any API endpoint page to relevant release note entries. A developer looking at the Card API has no way to know what changed in the last three months without navigating to a separate page.</p>
-</div>
+| Area | What's there today | Where it could go |
+| --- | --- | --- |
+| **Getting started** | The homepage offers three equal-weight cards (API Docs, Guides, Release Notes). There's no quickstart or first API call path, and the Guides section opens with a marketing welcome rather than a developer workflow. | A clear "start here" route for developers arriving ready to build: quickstart, first API call, sandbox setup, and a single entry point that doesn't ask them to pick between three equal options. |
+| **API overview** | The Payment API overview lists 18 section names with one sentence of description and no relationships between them. A developer can't make a choice without clicking into every section individually. | A short orientation that explains what each section is for and which one fits which use case, before the developer commits to clicking. |
+| **The data model** | Card, Customer, and Account live as separate concept pages. The order in which a developer needs them (customer first, then account, then card) isn't documented in one place. | A single "How Enfuce works" page with the entity relationships and a platform diagram. Every other page links back to it rather than re-explaining it. |
+| **Page anatomy** | The Card page covers 11+ sections — what cards are, how to create them, statuses, PIN creation, embossing data, renewal — on one scrolling page. Card status codes sit below embossing data. | A consistent page structure across the docs that separates "what it is" from "how to do it" from "look this up later," so each page is scannable on its own. |
+| **Voice consistency** | The Guides section is casual ("nice to meet you!"), the Card page is dense and technical, and Authorisation control is professional and measured. The shift between them is noticeable enough that a reader registers it. | A shared editorial baseline so the docs sound like one team across every page, regardless of who's writing in any given week. |
+| **Release notes linking** | The release notes are detailed, well-structured, and go back to 2022. They're also unlinked — no API endpoint page references them, so a developer doesn't see what changed recently without leaving the page they're on. | Inline links from each endpoint to the relevant release note entries, so recent changes meet the developer where they already are. |
 
 ---
 
@@ -236,7 +211,7 @@ The sample demonstrates:
 
 ## What this audit demonstrates
 
-This audit is a demonstration of how I would approach the first month in the Enfuce Technical Writer role — read everything, map what exists, identify structural problems, research how comparable companies solve the same problems, and propose a grounded IA before writing a single new page.
+This audit is a demonstration of how I'd approach the first month in the Enfuce Technical Writer role. Read everything. Map what exists. Note where the structure could be stronger, look at how comparable companies have solved similar challenges, and propose a grounded IA before writing a single new page.
 
 The most important part of a documentation restructure is not the writing. It is the governance decisions — what belongs where, how content is organised, how shared content is maintained, how different audiences are served by the same navigation. Those decisions, made correctly at the start, determine whether the documentation works. The writing is what makes it readable.
 
