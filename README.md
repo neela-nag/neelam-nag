@@ -29,15 +29,26 @@
 
 ## What I do
 
-I specialise in documentation for **developer-facing platforms** — APIs, payment integrations, SDKs, and the knowledge systems that help teams use them effectively.
+wDocumentation for **developer-facing platforms** — APIs, payment integrations, SDKs, and the knowledge systems that support them.
 
-My work sits at the intersection of three things most documentation misses:
+<div class="nn-sample-grid" markdown>
 
-**User intent** — every page I write starts with the question: what is this person trying to do, and why did they come here? Not what does the product do, but what does this reader need to accomplish.
+<div class="nn-sample-card" markdown>
+### User intent
+Every page starts with one question: what is this person trying to do? Not what the product does — what the reader needs to accomplish.
+</div>
 
-**Information architecture** — good documentation isn't a collection of pages, it's a system. I design how content is structured, maintained, and discovered — by humans and increasingly by AI.
+<div class="nn-sample-card" markdown>
+### Information architecture
+Documentation is a system, not a pile of pages. I design how content is structured, maintained, and discovered — by humans and AI.
+</div>
 
-**Measurable outcomes** — documentation that sits unread has failed. I measure success by whether people can find answers faster, onboard more smoothly, and rely on support less.
+<div class="nn-sample-card" markdown>
+### Measurable outcomes
+Faster onboarding, fewer support tickets, answers found in one search. Documentation that sits unread has failed.
+</div>
+
+</div>
 
 ---
 
@@ -48,25 +59,25 @@ My work sits at the intersection of three things most documentation misses:
     <span class="nn-tag">Case Study</span>
     <h3>Unzer Developer Portal</h3>
     <p>How I overhauled a 250-page payment platform portal — restructuring content, achieving WCAG 2.1 AA compliance, and building documentation the support team trusted as their primary reference.</p>
-    <a href="case-study/">Read the case study →</a>
+    <a href="https://neela-nag.github.io/neelam-nag/case-study/">Read the case study →</a>
   </div>
   <div class="nn-sample-card">
     <span class="nn-tag">Documentation Audit</span>
     <h3>Enfuce — IA proposal</h3>
     <p>An unsolicited audit of Enfuce's developer documentation — six structural problems identified, a new information architecture proposed based on leading issuer documentation patterns, and a sample integration guide written to demonstrate the approach.</p>
-    <a href="enfuce-audit/">Read the audit →</a>
+    <a href="https://neela-nag.github.io/neelam-nag/enfuce-audit/">Read the audit →</a>
   </div>
   <div class="nn-sample-card">
     <span class="nn-tag">Writing Samples</span>
     <h3>Documentation samples</h3>
     <p>Task topics, reference pages, concept guides, and a DITA-structured installation guide — each with a note on the audience, the decision, and the outcome.</p>
-    <a href="samples/">View samples →</a>
+    <a href="https://neela-nag.github.io/neelam-nag/samples/">View samples →</a>
   </div>
   <div class="nn-sample-card">
     <span class="nn-tag">AI and Docs</span>
     <h3>AI in my documentation workflow</h3>
     <p>How I use AI tools in production — not to replace judgment, but to accelerate it. Includes a prompt bank built for a law firm knowledge hub.</p>
-    <a href="ai-docs/">Read more →</a>
+    <a href="https://neela-nag.github.io/neelam-nag/ai-docs/">Read more →</a>
   </div>
 </div>
 
@@ -82,8 +93,8 @@ My work sits at the intersection of three things most documentation misses:
 
 ## Background
 
-Ten years across fintech, payments, and developer platforms — Unzer, Wirecard, FIS Global, Siemens PLM. I have owned documentation portals end-to-end, managed agency partnerships, implemented WCAG compliance under EU regulatory pressure, and built knowledge bases that internal teams actually use.
+Ten years across fintech and developer platforms — **Unzer**, **Wirecard**, **FIS Global**, **Siemens PLM**. End-to-end ownership of documentation portals, agency partnerships, WCAG compliance under EU regulation, and internal knowledge bases teams actually use.
 
-I hold an MBA in Finance and a PRINCE2 Foundation certification. I work in English and am improving my German toward B2.
+MBA in Finance · PRINCE2 Foundation · English · German B2 (ongoing)
 
-[Read more about me →](about/)
+[Read more about me →](https://neela-nag.github.io/neelam-nag/about/)

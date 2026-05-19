@@ -331,6 +331,13 @@ body {
   border-radius: 6px;
   padding: 1.2rem 1rem;
   text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.nn-stat:hover {
+  transform: translateY(-4px);
+  border-color: var(--nn-blue);
+  box-shadow: 0 10px 24px rgba(13, 43, 69, 0.10);
 }
 
 .nn-stat .nn-stat-num {
@@ -430,6 +437,13 @@ body {
   border: 1px solid var(--nn-mid);
   border-radius: 6px;
   padding: 1.1rem 1.3rem 1.2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.nn-ia-section:hover {
+  transform: translateY(-4px);
+  border-color: var(--nn-blue);
+  box-shadow: 0 10px 24px rgba(13, 43, 69, 0.10);
 }
 
 .md-typeset .nn-ia-section h5 {
@@ -516,12 +530,13 @@ body {
   border: 1px solid var(--nn-mid);
   border-radius: 8px;
   padding: 1.5rem;
-  transition: border-color 0.15s, box-shadow 0.15s;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .nn-sample-card:hover {
+  transform: translateY(-6px);
   border-color: var(--nn-blue);
-  box-shadow: 0 4px 16px rgba(26,107,170,0.08);
+  box-shadow: 0 14px 32px rgba(13, 43, 69, 0.14);
 }
 
 .nn-sample-card .nn-tag {
