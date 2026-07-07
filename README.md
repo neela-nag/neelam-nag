@@ -29,7 +29,7 @@
 
 ## What I do
 
-wDocumentation for **developer-facing platforms** — APIs, payment integrations, SDKs, and the knowledge systems that support them.
+Documentation for **developer-facing platforms** — APIs, payment integrations, SDKs, and the knowledge systems that support them.
 
 <div class="nn-sample-grid" markdown>
 
@@ -95,6 +95,6 @@ Faster onboarding, fewer support tickets, answers found in one search. Documenta
 
 Ten years across fintech and developer platforms — **Unzer**, **Wirecard**, **FIS Global**, **Siemens PLM**. End-to-end ownership of documentation portals, agency partnerships, WCAG compliance under EU regulation, and internal knowledge bases teams actually use.
 
-MBA in Finance · PRINCE2 Foundation · English · German B2 (ongoing)
+MBA in Finance · PRINCE2 Practitioner · English · German B2 (ongoing)
 
 [Read more about me →](https://neela-nag.github.io/neelam-nag/about/)
